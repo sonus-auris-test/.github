@@ -47,3 +47,13 @@ Each repository’s generated plan and immutable source pins are authoritative. 
 These repositories are not retirement candidates merely because a generated repository has a similar name. Retirement requires a semantic comparison proving that every unique invariant, fixture, failure mode, and relevant history has an explicit destination.
 
 Pull-request checks remain deterministic and credential-free. Private cross-organization materialization requires approved short-lived GitHub App installation tokens with no PAT or persistent-token fallback. Device, provider, database, chaos, scale, and soak execution remains scheduled or manually gated.
+
+<!-- org-project-routing:start -->
+## Planning and delivery
+
+- [GitHub Project: sonus-auris-test-project](https://github.com/orgs/sonus-auris-test/projects/1)
+- [Linear planning project](https://linear.app/denman/project/githubcomsonus-auris-test-226a3ded82fb)
+- [Detailed project-routing contract](../docs/PROJECTS.md)
+
+GitHub owns code and delivery evidence; Linear owns planning and dependencies. The linked organization Project provides the cross-repository execution view.
+<!-- org-project-routing:end -->
