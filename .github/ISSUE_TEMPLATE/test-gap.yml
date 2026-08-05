@@ -1,0 +1,52 @@
+name: Test gap
+description: Propose independent Sonus Auris acceptance coverage
+title: "test-gap: "
+labels:
+  - test-gap
+body:
+  - type: textarea
+    id: invariant
+    attributes:
+      label: Invariant
+      description: What recorder, privacy, cryptographic, synchronization, or evidentiary behavior must remain true?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Deterministic reproduction
+      description: Describe synthetic fixtures, exact revisions, environment, failure/recovery path, and retained evidence.
+    validations:
+      required: true
+  - type: dropdown
+    id: classification
+    attributes:
+      label: Expected failure classification
+      options:
+        - product regression
+        - blocked dependency
+        - harness regression
+        - unknown pending investigation
+    validations:
+      required: true
+  - type: dropdown
+    id: tier
+    attributes:
+      label: Execution tier
+      options:
+        - pull-request contract
+        - scheduled integration
+        - mobile emulator or simulator
+        - desktop lifecycle
+        - provider interoperability
+        - long-duration soak or scale
+        - security or evidence integrity
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy and evidence controls
+      options:
+        - label: Fixtures are synthetic and contain no private recordings, messages, biometrics, production credentials, or production-user data.
+          required: true

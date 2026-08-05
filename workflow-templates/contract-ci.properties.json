@@ -1,0 +1,7 @@
+{
+  "name": "Independent Sonus Auris contract CI",
+  "description": "Run deterministic, credential-free acceptance checks with immutable action pins and explicit failure classification.",
+  "iconName": "check-circle",
+  "categories": ["Continuous integration", "Testing"],
+  "filePatterns": ["test-plan\\.(json|ya?ml)$", "dependency-contract\\.ya?ml$", "scripts/run-contract\\.sh$"]
+}
