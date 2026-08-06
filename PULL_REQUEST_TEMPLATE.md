@@ -1,19 +1,11 @@
-## Purpose
+## Acceptance surface
 
-Describe the problem, intended behavior, and why this repository owns the change.
-
-## Scope and boundaries
-
-- [ ] The change is focused and does not silently cross repository ownership boundaries.
-- [ ] No `*-infra` repository is introduced as a Git submodule under `*-monorepo/apps`.
-- [ ] Public contracts, migrations, compatibility, and rollback needs are documented.
-
-## Validation
-
-List formatters, linters, tests, builds, security checks, and manual verification performed.
-
-## Safety
-
-- [ ] No credentials, customer data, or private-repository inventory is included.
-- [ ] Conflicts were resolved semantically using both sides and relevant history.
-- [ ] Destructive Git recovery and history rewrites were not used.
+- [ ] Source repositories and third-party actions are pinned to immutable commits.
+- [ ] Declared Git submodule, Zed, and native-package lanes are preserved.
+- [ ] Executable product assertions run; this is not a no-op, metadata-only, skipped-success, or fixture-presence check.
+- [ ] Failure, cancellation, restart, and recovery paths execute where applicable.
+- [ ] Failure classification is explicit: product regression, blocked dependency, or harness regression.
+- [ ] Device, emulator, desktop, provider, database, chaos, scale, and soak execution is justified and appropriately gated.
+- [ ] Fixtures are synthetic; logs and artifacts contain no credentials, production audio, private messages, biometric material, or evidentiary recordings.
+- [ ] Evidence records the exact upstream revision, environment, result, and retained artifacts needed to reproduce the outcome.
+- [ ] Overlapping or superseded work has a semantic trace for every unique invariant, fixture, failure mode, and useful history retained or intentionally rejected.
