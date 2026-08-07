@@ -1,7 +1,16 @@
 {
-  "name": "Independent Sonus Auris contract CI",
+  "categories": [
+    "Continuous integration",
+    "Testing"
+  ],
   "description": "Run deterministic, credential-free acceptance checks with immutable action pins and explicit failure classification.",
+  "filePatterns": [
+    "test-plan\\.(json|ya?ml)$",
+    "dependency-contract\\.ya?ml$",
+    "scripts/run-contract\\.sh$",
+    "test-plan\\.yaml$",
+    "dependency-contract\\.yaml$"
+  ],
   "iconName": "check-circle",
-  "categories": ["Continuous integration", "Testing"],
-  "filePatterns": ["test-plan\\.(json|ya?ml)$", "dependency-contract\\.ya?ml$", "scripts/run-contract\\.sh$"]
+  "name": "Independent Sonus Auris contract CI"
 }
