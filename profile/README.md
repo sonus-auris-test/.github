@@ -8,24 +8,7 @@ The authenticated live inventory contains **28 test repositories** plus this gov
 
 | Repository | Acceptance surface |
 |---|---|
-| `android-recorder-emulator-e2e` | Android recording, lifecycle, permissions, restart, and emulator behavior |
-| `ios-recorder-simulator-e2e` | iOS recording, lifecycle, permissions, restart, and simulator behavior |
-| `scheduled-capture-e2e` | Always-on and scheduled capture windows, transitions, and recovery |
-| `permission-lifecycle-e2e` | Permission grant, denial, revocation, relaunch, and recovery |
-| `audio-codec-container-e2e` | Audio codecs, containers, duration, metadata, and corruption handling |
-| `encryption-key-rotation-e2e` | On-device encryption, key rotation, overlap, rollback, and loss handling |
-| `retention-pruning-e2e` | Retention limits, plaintext-to-encrypted transitions, pruning, and restart durability |
-| `evidence-integrity-e2e` | Hashes, manifests, ordering, tamper detection, and evidentiary export integrity |
-| `offline-sync-e2e` | Offline recording metadata, conflict handling, retries, and convergence |
-| `clients-rust-consumer` | Rust SDK consumption and compatibility |
-| `clients-typescript-consumer` | TypeScript SDK consumption and compatibility |
-| `clients-dart-consumer` | Dart/Flutter SDK consumption and compatibility |
-| `api-contract-e2e` | Recorder, session, upload, retention, export, and authentication API contracts |
-| `web-console-e2e` | Browser console workflows, accessibility, privacy, and error states |
-| `desktop-shutdown-e2e` | Desktop quit, flush, permission, tray, and shutdown lifecycle |
-| `waveform-golden-e2e` | Deterministic waveform rendering and audio-derived golden fixtures |
-| `long-run-soak-e2e` | Long-duration capture, resource bounds, rollover, and recovery |
-| `mcp-contract-e2e` | MCP schemas, authorization, redaction, and administrative boundaries |
+Private repository details are intentionally withheld from this public document.
 
 Each repository’s generated plan and immutable source pins are authoritative. Metadata validation, source-gate detection, or a skipped device/provider job is not product acceptance. Gated integration must execute a real product entrypoint and fail closed when dependencies are unavailable.
 
@@ -33,16 +16,7 @@ Each repository’s generated plan and immutable source pins are authoritative. 
 
 | Repository | Unique coverage retained pending semantic comparison |
 |---|---|
-| `android-ios-recorder-emulators` | Combined mobile emulator matrix and cross-platform recording scenarios |
-| `desktop-recorder-e2e` | Independent desktop recorder lifecycle and evidence fixtures |
-| `clients-api-contract` | Cross-client and API consumer matrix |
-| `audio-retention-encryption` | Combined retention, plaintext window, encryption, and recovery invariants |
-| `scheduled-always-on` | Always-on scheduling and failover scenarios |
-| `voxletra-transcription` | Voxletra transcription interoperability and privacy boundaries |
-| `multi-device-sync` | Multi-device synchronization and conflict scenarios |
-| `permission-lifecycle` | Independent mobile/desktop permission lifecycle coverage |
-| `long-duration-soak` | Independent long-duration and resource-bound soak evidence |
-| `recovery-export-evidence` | Recovery, export, chain-of-custody, and legal-evidence scenarios |
+Private repository details are intentionally withheld from this public document.
 
 These repositories are not retirement candidates merely because a generated repository has a similar name. Retirement requires a semantic comparison proving that every unique invariant, fixture, failure mode, and relevant history has an explicit destination.
 
@@ -69,3 +43,15 @@ GitHub owns code and delivery evidence; Linear owns planning and dependencies. T
 
 Repositories in this organization use semantic conflict resolution with 3–10 relevant prior commits when useful, full cross-repository context, pull-request delivery, and a hard automated-agent denylist for destructive or history-rewriting operations.
 <!-- ore-org-baseline:end -->
+
+<!-- BEGIN MANAGED REPOSITORY RELATIONSHIPS v1 -->
+## Repository relationship registry
+
+`sonus-auris-test` declares repository roles, dependency edges, cross-organization capabilities, deployment ownership, and the git-submodule/Zed-package contract:
+
+- [Human-readable map](architecture/REPOSITORY_RELATIONSHIPS.md)
+- [Machine-readable manifest](architecture/repository-relationships.json)
+- [JSON Schema](architecture/repository-relationships.schema.json)
+
+The public registry withholds private repository names and edges.
+<!-- END MANAGED REPOSITORY RELATIONSHIPS v1 -->
