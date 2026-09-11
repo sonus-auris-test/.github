@@ -9,3 +9,11 @@
 - [ ] Fixtures are synthetic; logs and artifacts contain no credentials, production audio, private messages, biometric material, or evidentiary recordings.
 - [ ] Evidence records the exact upstream revision, environment, result, and retained artifacts needed to reproduce the outcome.
 - [ ] Overlapping or superseded work has a semantic trace for every unique invariant, fixture, failure mode, and useful history retained or intentionally rejected.
+
+## Salvage check
+
+If this PR supersedes or replaces an older one, say which, and name at least one
+concrete thing carried forward from it (a test, a fixture, an error message, a
+pin, a doc paragraph). See [`docs/pr-salvage-policy.md`](../docs/pr-salvage-policy.md).
+
+- [ ] Supersedes nothing, **or** the salvaged item is named above.
